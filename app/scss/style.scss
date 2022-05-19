@@ -4,20 +4,23 @@
 
 // header
 
-.header__top-inner{
+.header__top-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 90px;
 }
-.header__text{
+
+.header__text {
     margin-left: auto;
     margin-right: 50px;
-        span{
-            color: $red;
-        }
+
+    span {
+        color: $red;
+    }
 }
-.header__btn{
+
+.header__btn {
     padding: 4px;
     width: 72px;
     border-radius: 4px;
@@ -25,29 +28,36 @@
     color: #fff;
     font-size: 12px;
 }
-.header__btn-login{
+
+.header__btn-login {
     background-color: $green;
 }
-.header__btn-register{
+
+.header__btn-register {
     background-color: $red;
     margin-left: 7px;
 }
-.header__menu{
+
+.header__menu {
     background-color: $bg;
 }
-.menu{
+
+.menu {
     display: flex;
     align-items: center;
     height: 60px;
 }
-.menu__list{
-    li{
+
+.menu__list {
+    li {
         display: inline-block;
-        &+li{
+
+        &+li {
             margin-left: 30px;
         }
     }
-    a{
+
+    a {
         color: #fff;
         font-size: 14px;
     }
@@ -55,34 +65,39 @@
 
 // search
 
-.search{
-    
+.search {
+
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 533px;
 }
-.search__inner{
+
+.search__inner {
     padding: 155px 0 100px;
     color: #fff;
     text-align: center;
-    &-title{
+
+    &-title {
         font-size: 48px;
         line-height: 72px;
         @include f700;
         margin-bottom: 10px;
     }
-    &-text{
+
+    &-text {
         margin-bottom: 50px;
         font-size: 20px;
         line-height: 30px;
         @include f500;
     }
-    &-form{
+
+    &-form {
         max-width: 670px;
         margin: 0 auto;
         position: relative;
-        input{
+
+        input {
             display: block;
             width: 100%;
             box-shadow: 0px 1px 10px 0px rgba(124, 178, 64, 0.75);
@@ -93,13 +108,15 @@
             @include f500;
             padding-left: 25px;
             padding-right: 60px;
-            &::placeholder{
+
+            &::placeholder {
                 color: #90a4ae;
                 @include f500;
             }
         }
     }
-    button{
+
+    button {
         position: absolute;
         border: none;
         background-color: transparent;
@@ -111,47 +128,55 @@
 
 // products
 
-.products{
+.products {
     padding: 110px 0;
     background-color: $grey;
 }
-.products__inner-btn{
+
+.products__inner-btn {
     text-align: center;
     margin-bottom: 60px;
-    button{
+
+    button {
         padding: 12px 21px;
         border: none;
         background-color: #fff;
         color: $bg;
         cursor: pointer;
-        &+button{
+
+        &+button {
             margin-left: 5px;
         }
-        &.mixitup-control-active{
+
+        &.mixitup-control-active {
             background-color: $red;
             color: #fff;
         }
     }
-    
+
 }
-.products__inner-box{
+
+.products__inner-box {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
-.product__item{
+
+.product__item {
     max-width: 442px;
     width: 100%;
     box-shadow: 0px 1px 2px 0px rgba(205, 214, 222, 0.75);
     margin-bottom: 30px;
-    &-img{
-         min-height: 250px;
-         background-repeat: no-repeat;
-         display: block;
-         background-position: center;
-         background-size: cover;
+
+    &-img {
+        min-height: 250px;
+        background-repeat: no-repeat;
+        display: block;
+        background-position: center;
+        background-size: cover;
     }
-    &-content{
+
+    &-content {
         display: flex;
         justify-content: space-between;
         padding: 10px 30px;
@@ -160,62 +185,73 @@
         @include f500;
         border-bottom: 1px solid #e7ecf2;
     }
-    &-name{
+
+    &-name {
         max-width: 310px;
     }
-    &-title{
+
+    &-title {
         color: $bg;
         font-size: 18px;
         display: block;
     }
-    &-category{
+
+    &-category {
         display: block;
         font-size: 14px;
         color: $green;
     }
-    &-price{
+
+    &-price {
         font-size: 20px;
         color: $bg;
         @include f700;
     }
-    &-info{
+
+    &-info {
         display: flex;
         justify-content: space-between;
         align-items: center;
         min-height: 70px;
         padding: 10px 30px;
     }
-    &-autor{
+
+    &-autor {
         display: flex;
         align-items: center;
         max-width: 250px;
-        .avatar{
+
+        .avatar {
             width: 30px;
             height: 30px;
             border-radius: 50%;
-            background-position: center;  
+            background-position: center;
             display: inline-block;
             background-repeat: no-repeat;
-            background-size: cover;    
-            margin-right: 14px;    
+            background-size: cover;
+            margin-right: 14px;
         }
-        span{
+
+        span {
             font-size: 14px;
             @include f500;
-         }
+        }
     }
-    &-star{
-        span{
+
+    &-star {
+        span {
             color: $bg;
             font-size: 12px;
-        
+
         }
     }
 
 }
-.products__bottom-btn{
+
+.products__bottom-btn {
     text-align: center;
-    button{
+
+    button {
         margin: 45px 5px 0;
         box-shadow: 0px 1px 3px 0px rgba(204, 216, 228, 0.75);
         border: none;
@@ -223,26 +259,30 @@
         background-color: #fff;
         color: $bg;
         padding: 20px 30px;
-        &.mixitup-control-active{
+
+        &.mixitup-control-active {
             background-color: $red;
             color: #fff;
         }
-    
+
     }
 }
 
 // slider
 
-.product__slider{
+.product__slider {
     padding: 110px 0 120px;
-    .slick-dots{
+
+    .slick-dots {
         text-align: center;
         margin-top: 50px;
-        li{
+
+        li {
             display: inline-block;
             margin-left: 3px;
             margin-right: 3px;
-            button{
+
+            button {
                 background-color: rgb(232, 232, 232);
                 border-radius: 50%;
                 border: none;
@@ -251,8 +291,9 @@
                 height: 16px;
                 cursor: pointer;
             }
-            &.slick-active{
-                button{
+
+            &.slick-active {
+                button {
                     background-color: $green;
                 }
             }
@@ -262,33 +303,40 @@
 
 // Advantages
 
-.advanteges{
+.advanteges {
     padding: 110px 0;
     background-color: $bg;
 }
-.advanteges__title{
+
+.advanteges__title {
     color: #fff;
 }
-.advanteges__inner{
+
+.advanteges__inner {
     display: flex;
     justify-content: space-between;
 }
-.advanteges__item{
+
+.advanteges__item {
     max-width: 370px;
     text-align: center;
     padding: 0 15px;
-    &:hover{
-        .advanteges__item-img{
+
+    &:hover {
+        .advanteges__item-img {
             background-color: $green;
-            svg{
+
+            svg {
                 fill: #fff;
             }
-        } 
-        .advanteges__item-title{
+        }
+
+        .advanteges__item-title {
             color: $green;
         }
     }
-    &-img{
+
+    &-img {
         width: 114px;
         height: 114px;
         background-color: #fff;
@@ -299,34 +347,39 @@
         margin: 0 auto 30px;
         transition: all .3s;
     }
-    &-title{
+
+    &-title {
         margin-bottom: 25px;
         color: #fff;
         @include f500;
         font-size: 24px;
         transition: all .3s;
     }
-    &-text{
+
+    &-text {
         font-size: 15px;
         color: #b0bec5;
     }
 }
-.iconsvg-1{
-    svg{
+
+.iconsvg-1 {
+    svg {
         width: 80px;
         transition: all .3s;
         margin-bottom: 5px;
     }
 }
-.iconsvg-2{
-    svg{
+
+.iconsvg-2 {
+    svg {
         width: 80px;
         transition: all .3s;
         margin-bottom: 5px;
     }
 }
-.iconsvg-3{
-    svg{
+
+.iconsvg-3 {
+    svg {
         width: 80px;
         transition: all .3s;
         margin-top: 10px;
@@ -335,7 +388,7 @@
 
 // Author
 
-.author{
+.author {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -343,7 +396,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    &__box{
+
+    &__box {
         max-width: 650px;
         width: 100%;
         min-height: 215px;
@@ -352,17 +406,20 @@
         justify-content: center;
         background-color: $green;
     }
-    &__title{
+
+    &__title {
         font-size: 30px;
         line-height: 36px;
         color: #fff;
         margin-right: 45px;
         max-width: 260px;
-        span{
+
+        span {
             @include f700;
         }
     }
-    &__link{
+
+    &__link {
         font-size: 18px;
         line-height: 36px;
         padding: 14px 40px;
@@ -372,25 +429,29 @@
 
 // Tutorial
 
-.tutorial{
+.tutorial {
     padding: 70px 0 155px;
-    &__inner{
+
+    &__inner {
         display: flex;
         justify-content: space-between;
     }
-    &__item{
+
+    &__item {
         max-width: 370px;
         width: 100%;
     }
 }
-.tutorial__item{
-    &-img{
+
+.tutorial__item {
+    &-img {
         min-height: 270px;
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
     }
-    &-title{
+
+    &-title {
         font-size: 24px;
         @include f700;
         background-color: #f8f8f8;
@@ -398,4 +459,171 @@
         color: $bg;
         text-align: center;
     }
+}
+
+// Footer
+
+.footer {
+    background-color: $bg;
+
+    &__inner {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 100px 0 80px;
+    }
+}
+
+.footer__col {
+    max-width: 270px;
+    width: 100%;
+    &-menu {
+        max-width: 220px;
+    }
+    &-title {
+        font-size: 22px;
+        font-weight: 700;
+        font-family: 'Raleway', sans-serif;
+        color: #fff;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 2px;
+            width: 51px;
+            height: 3px;
+            background-color: $green;
+        }
+    }
+    &-text {
+        color: #b7c3c8;
+        margin-bottom: 30px;
+    }
+}
+.footer__info {
+    margin-top: 18px;
+    color: #fff;
+    @include f500;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+        content: "\f041";
+        font-family: 'icomoon';
+        color: $green;
+        font-size: 18px;
+        position: absolute;
+        left: 0;
+    }
+}
+.footer__info-phone {
+    &::before {
+        content: "\f095";
+    }
+}
+.footer__col-list {
+    a {
+        color: #b7c3c8;
+        margin-bottom: 15px;
+        padding-left: 22px;
+        position: relative;
+        &::before {
+            content: "\f054";
+            font-family: 'icomoon';
+            color: $green;
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+        }
+    }
+}
+.footer__social-link{
+    margin-bottom: 33px;
+    a{
+        width: 28px;
+        height: 28px;
+        background-image: url('../images/content/css_sprites.png');
+    }
+    li{
+        display: inline-block;
+        &+li{
+            margin-left: 7px;
+        }
+    }
+}
+.link-twitter{
+    background-position: -28px 0;
+}
+.link-youtube{
+    background-position: 0 28px;
+}
+.link-pinterest{
+    background-position: -28px -28px;
+}
+.link-linkedin{
+    background-position: -56px 0;
+}
+.footer__form-title{
+    margin-bottom: 15px;
+    color: #fff;
+    font-size: 20px;
+}
+.footer__form{
+    position: relative;
+    input{
+        border: none;
+        background-color: #2f3c43;
+        display: block;
+        height: 40px;
+        width: 100%;
+        color: #fff;
+        font-size: 14px;
+        padding-left: 13px;
+        padding-right: 50px;
+        &::placeholder{
+            color: #697378;
+        }
+    }
+    button{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: $green;
+        border: none;
+        height: 40px;
+        width: 43px;
+        cursor: pointer;
+        &::before{
+            content: "\f124";
+            font-family: 'icomoon';
+            color: #fff;
+            font-size: 18px;
+            position: absolute;
+            left: 13px;
+            top: 11px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.footer__copy {
+    border-top: 1px solid #424d53;
+    padding: 25px 0;
+}
+
+.footer__copy-text {
+    text-align: center;
+    font-size: 15px;
+    color: #919699;
 }
