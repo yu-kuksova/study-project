@@ -41,6 +41,11 @@ body{
 
 }
 
+.rote-stars{
+    display: inline-block;
+    margin-right: 13px;
+}
+
 @media (max-width: 720px){
     .container-fluid{
         padding: 0 15px;
