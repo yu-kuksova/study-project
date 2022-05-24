@@ -1614,7 +1614,90 @@
     }
 }
 
+// 404
+.page-404{
+    background-color: $grey;
+}
+.page-404__wrapper,
+.about__wripper{
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    margin-bottom: 150px;
+}
+.page-404__head,
+.about__head{
+    font-size: 24px;
+    color: #444444;
+    @include f500;
+    padding: 23px 27px;
+    border-bottom: 1px solid #dcdcdc;
+}
+.page-404__inner{
+    background-color: $green;
+    text-align: center;
+    color: #fff;
+}
+.page-404__404{
+    font-size: 300px;
+    line-height: 300px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    color: #fff;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url('../images/man.png');
+        width: 157px;
+        height: 301px;
+        margin-left: 20px;
+    }
+}
+.page-404__title{
+    margin-bottom: 30px;
+    font-size: 30px;
+    color: #fff;
 
+}
+.page-404__text{
+    font-size: 18px;
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 60px;
 
+}
+.page-404__link{
+    font-size: 14px;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 20px 30px 16px;
+    margin-bottom: 100px;
+}
+
+// about
+
+.about{
+    background-color: $grey;
+}
+.about__inner{
+    padding: 0px 50px;
+}
+.about_box{
+    h3{
+        color: #444444;
+        font-size: 20px;
+        @include f700;
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+    p{
+        color: #707070;
+        margin-bottom: 40px;
+    }
+}
 
 @import 'media';
