@@ -1619,13 +1619,15 @@
     background-color: $grey;
 }
 .page-404__wrapper,
-.about__wripper{
+.about__wripper,
+.contact__wrapper{
     border: 1px solid #dcdcdc;
     background-color: #fff;
     margin-bottom: 150px;
 }
 .page-404__head,
-.about__head{
+.about__head,
+.contact__head{
     font-size: 24px;
     color: #444444;
     @include f500;
@@ -1699,5 +1701,122 @@
         margin-bottom: 40px;
     }
 }
+
+// contact
+.contact__head{
+    padding-left: 40px;
+}
+.contact__inner{
+    padding: 35px 40px 15px;
+}
+.contact__map{
+    margin-bottom: 50px;
+    
+    iframe{
+        width: 100%;
+        height: 415px;
+    }
+}
+.contact__box{
+    display: flex;
+}
+.contact__info{
+    margin-right: 30px;
+    max-width: 330px;
+    width: 100%;
+}
+.contact__info-item{
+    margin-bottom: 30px;
+}
+.contact__info-title{
+    padding-bottom: 20px;
+    padding-left: 40px;
+    position: relative;
+    font-size: 20px;
+    @include f500;
+    color: $bg;
+    font-family: 'Roboto-Regular', sans-serif !important;
+    &::after{
+        content: "";
+        position: absolute;
+        width: 44px;
+        height: 4px;
+        background-color: $green;
+        bottom: 0;
+        left: 40px;
+    }
+    &::before{
+        color: $green;
+        font-size: 24px;
+        position: absolute;
+        left: 0;
+        font-family: 'icomoon';
+
+    }
+    
+}
+.contact__form{
+    width: 100%;
+    input{
+        border: none;
+        background-color: #f1f4f5;
+        height: 43px;
+        padding: 0px 17px;
+        width: 350px;
+        margin-bottom: 30px;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    textarea{
+        border: none;
+        background-color: #f1f4f5;
+        padding: 13px 17px;
+        width: 100%;
+        height: 191px;
+        display: block;
+        resize: none;
+        margin-bottom: 20px;
+        &::placeholder{
+            color: #7a7a7a;
+            font-size: 15px;
+        }
+    }
+    button{
+        border: none;
+        color: #fff;
+        background-color: $green;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-align: center;
+        @include f700;
+        padding: 20px 5px;
+        width: 190px;
+        cursor: pointer;
+    }
+}
+.contact__info-content{
+    padding-left: 40px;
+    color: #707070;
+    margin-top: 20px;
+    max-width: 270px;
+}
+.contact__form-title{
+    font-size: 24px;
+    margin-bottom: 27px;
+    @include f500;
+    color: #333333;
+}
+.contact__form-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+
 
 @import 'media';
