@@ -865,6 +865,7 @@
         background-image: url('../images/content/css_sprites.png');
     }
     li {
+        border-radius: 2px;
         display: inline-block;
         &+li {
             margin-left: 7px;
@@ -1912,6 +1913,200 @@
         font-size: 14px;
     }
 }
+
+// profile
+
+.profile__inner{
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.profile__aside{
+    max-width: 270px;
+    width: 100%;
+}
+.profile__content{
+    width: 100%;
+}
+.profile-status{
+    color: #70838d;
+    font-size: 13px;
+    border: 1px solid #d6d6d6;
+    padding: 6px 9px 5px 30px;
+    position: relative;
+    &::before{
+        position: absolute;
+        content: "";
+        left: 11px;
+        top: 13px;
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+    }
+}
+.profile--on{
+    &::before{
+        background-color: $green;
+    }
+}
+.profile--off{
+    &::before{
+        background-color: $red;
+    }
+}
+.profile__aside{
+    margin-right: 30px;
+    .footer__social-link{
+        margin-bottom: 23px;
+    }
+}
+.profile__aside-btn{
+    margin-bottom: 13px;
+    text-align: center;
+}
+.profile__aside-message{
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    @include f500;
+    background-color: $text;
+    padding: 18px 10px;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75);
+    position: relative;
+    &::before{
+        content: "\f003";
+        font-family: 'icomoon';
+        font-size: 16px;
+        color: #fff;
+        position: absolute;
+        left: 53px;
+        top: 17px;
+    }
+}
+.profile__aside-following{
+    margin-bottom: 17px;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    color: #fff;
+    @include f700;
+    background-color: $green;
+    padding: 18px 10px;
+    text-align: center;
+    box-shadow: 0px 1px 2px 0px rgba(69, 90, 100, 0.75)
+}
+.profile__banner{
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    background-color: #fff;
+    margin-bottom: 35px;
+}
+.profile__banner-img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 332px;
+}
+.profile__items{ 
+    display: flex;
+    border: 1px solid #dcdcdc;
+}
+.profile__item{
+    text-align: center;
+    width: 25%;
+    background-color: #fff;
+    padding: 20px 5px 17px;
+    &+.profile__item{
+        border-left: 1px solid #dcdcdc;
+    }
+}
+.profile__item-title{
+    @include f500;
+    font-size: 14px;
+    color: $bg;
+}
+.profile__item-content{
+    @include f500;
+    font-size: 14px;
+    color: #707070;
+    &.profile__item-sales{
+        color: #000;
+    }
+}
+.profile-settings{
+    .settings__tabs.product-one__tabs{
+        .tabs span{
+            color: #707070;
+            font-family: 'Roboto-Regular', sans-serif !important;
+            font-size: 14px;
+            @include f500;
+            position: relative;
+            &::before{
+                left: 24px;
+                color: #d0d0d0;
+                font-size: 14px;
+                position: absolute;
+                font-family: 'icomoon';
+            }
+            &.active{
+                color: $bg;
+            }
+            &.active::before{
+                color: $green;
+            } 
+        }
+    }
+}
+.profile__box{
+    background-color: #fff;
+    padding: 35px 40px 25px;
+    border: 1px solid #dedede;
+}
+.profile__box-title{
+    font-size: 20px;
+    @include f700;
+    margin-bottom: 25px;
+    color: $bg;
+}
+.profile__box-text{
+    p{
+        color: #707070;
+    }
+    margin-bottom: 20px;
+}
+
+.profile__box-item-head{
+    display: flex;
+    justify-content: space-between;
+}
+.profile__box-item-name{
+    @include f500;
+    font-size: 16px;
+    color: $bg;
+    font-style: italic;
+}
+.profile__box-item-namber{
+    margin-bottom: 16px;
+    @include f700;
+    font-size: 16px;
+    color: $bg;
+}
+.profile__box-item-line{
+    height: 15px;
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    margin-bottom: 23px;
+    span{
+        display: block;
+        border-radius: 3px;
+        height: 15px;
+        background-image: url('../images/progress-bar.jpg');
+        background-repeat: repeat;
+    }
+}
+
 
 
 
